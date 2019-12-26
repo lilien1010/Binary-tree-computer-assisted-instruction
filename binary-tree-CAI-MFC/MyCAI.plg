@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyCAI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Temp\RSP5BA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MyCAI.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp"
+]
+Creating command line "cl.exe @C:\Temp\RSP5BA.tmp" 
+Creating temporary file "C:\Temp\RSP5BB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MyCAI.pdb" /debug /machine:I386 /out:"Debug/MyCAI.exe" /pdbtype:sept 
+".\Debug\MainFrm.obj"
+".\Debug\MyCAI.obj"
+".\Debug\MyCAIDoc.obj"
+".\Debug\MyCAIView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MyTreeDlg.obj"
+".\Debug\MyCAI.res"
+]
+Creating command line "link.exe @C:\Temp\RSP5BB.tmp"
+<h3>Output Window</h3>
+Compiling...
+MyCAIView.cpp
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(119) : warning C4018: '<' : signed/unsigned mismatch
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(547) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(547) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(590) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(590) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(712) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(721) : warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(722) : warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+E:\studyfile\My Code\我的CAI\MyCAI\MyCAIView.cpp(738) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Linking...
+LINK : fatal error LNK1168: cannot open Debug/MyCAI.exe for writing
+Error executing link.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/MyCAI.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MainFrm.sbr" ".\Debug\MyCAI.sbr" ".\Debug\MyCAIDoc.sbr" ".\Debug\MyCAIView.sbr" ".\Debug\MyTreeDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MyCAI.exe - 1 error(s), 9 warning(s)
+</pre>
+</body>
+</html>
