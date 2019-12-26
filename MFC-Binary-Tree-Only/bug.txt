@@ -1,0 +1,41 @@
+File:bardlg.cpp
+Line:48
+    然后看了一下别人的建立过程，发现别人建立对话框的时候，是直接建立的IDD_DIALOGBAR的对话框，于是比较了IDD_DIALOGBAR和IDD_DIALOG的各种参数，发现只要把建立的IDD_DIALOG对话框的属性改一下就可以了。
+    样式：下层；边框：无；
+    更多样式：取消可见
+
+: 'AfxBeginThread' : none of the 2 overloads can convert parameter 1 from type 'unsigned int (__cdecl *)(long)'
+线程函数参数定义错误
+
+让CDialogbar enablewindow上面的按钮 灰色控制
+
+ON_UPDATE_COMMAND_UI来控制 响应函数
+		pCmdUI->Enable(TRUE); 
+
+
+设置单文档的 标题
+BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
+{
+ if( !CFrameWnd::PreCreateWindow(cs) )
+  return FALSE;
+cs.lpszName="自己想要的名字";
+cs.style&=~FWS_ADDTOTITLE;//第一种方式
+ //m_strTitle = "编程网 "; 
+
+//cs.style   =   WS_OVERLAPPEDWINDOW;  //第二种方式
+ return TRUE;
+}
+
+
+建立非模态对话框
+CTestDlg *dlg=new CTestDlg;
+dlg->Create(IDD_TEST_DLG,NULL);
+dlg->ShowWindows(SW_SHOW);
+
+
+CView类为基类的程序实现滚动窗口
+
+OnCreate中添加	this-> ShowScrollBar(   SB_BOTH   );
+
+关于逻辑单位与像素的区别  SetMapMode
+逻辑单位根据当前映射模式而定，像素单位就是死的，一个点一个点。
